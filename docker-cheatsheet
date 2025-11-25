@@ -1,0 +1,40 @@
+* DOCKER CHEATSHEET *
+
+docker pull <image_id>
+
+docker run <image_id>
+docker run ghcr.io/oracle/adb-free:latest-23ai-amd64
+# -d flag, detached mode allows the container to run in the background
+
+docker run -d --name <container_name> -p <host_port>:<container_port> -e ENV_VAR_NAME=value <image_id>
+docker run -d --name adb26-free -p 1521:1521 -e ORACLE_PWD=adb26free-pw ghcr.io/oracle/adb-free:25.10.2.1
+# --name flag, assign a name to the container
+# -p flag, map host port to container port
+# -e flag, set environment variables
+
+docker stop <container_id>
+# stops the container
+
+## CONTAINERS ##
+docker ps
+# list of running containers
+# -a flag, list all containers
+
+docker ps -a
+# list all containers
+
+docker rm <container_id>
+# deletes the container
+
+## IMAGES ##
+
+docker images
+# list all docker images
+
+docker rmi <image_name or image_id>
+# deletes a docker image
+
+colima -v
+colima start
+colima stop
+colima start --memory 8 --cpu 4
