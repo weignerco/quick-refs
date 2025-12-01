@@ -45,4 +45,4 @@ curl http://<instance_public_ip>:8000/v1/chat/completions \
     ],
     "max_tokens": 100
   }'
-# example curl command to interact with the LLM server, requesting an explanation about why the sky is blue
+# sample curl command to interact with the LLM server, requesting an explanation about why the sky is blue
