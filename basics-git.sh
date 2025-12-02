@@ -25,10 +25,13 @@ git commit -m "Initial commit with <filename>" # Commits the staged changes with
 # Push to remote repository (assuming remote is set up)
 git remote add origin <remote-repo-URL> # Add remote repository URL, set this up only once
 git push <filename> # Pushes the commits to the remote repository
+# Push multiple files
+git push <file1> <file2> <file3> # Pushes multiple files
 
 
-# Check git version
-git --version
+
+# Shows the status of files in the working directory and staging area
+git status 
 
 # Show git configuration
 git config --list
