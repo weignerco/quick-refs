@@ -26,6 +26,15 @@ git clone <remote-repo-URL> # Clones the repository from the given URL
 git add <filename> # Stages the file 'filename' for commit
 # Add multiple files
 git add <file1> <file2> <file3> # Stages multiple files
+# Add all files in the current directory
+git add . # Stages all files in the current directory for commit
+
+# Add a .gitignore file to exclude files from being tracked
+git add .gitignore # Stages the .gitignore file
+
+# .gitignore file example content:
+# node_modules/ - ignores the entire node_modules directory
+# *.log - ignores all files with .log extension
 
 
 # Commit the file
