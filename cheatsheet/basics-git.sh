@@ -1,5 +1,11 @@
 ## Basics on Git
 
+# Git Stages
+# 1. Working Directory: Where you create and edit files
+# 2. Staging Area: Where you stage files to be committed
+# 3. Local Repository: Where committed files are stored
+# 4. Remote Repository: A version of your repository hosted on the internet or network
+
 # Usual Steps to use Git:
 # (Steps 1-3 are from your local machine, Step 4 is for remote repositories):
 # 1. Initialize a repository (setup only once per project) or clone an existing one
@@ -45,3 +51,8 @@ git config --global user.name "Your Name"
 git config --global user.email "email@address.com"
 
 
+###########################################################
+
+# Remove git initialization from a directory
+rm -rf .git # Deletes the .git folder, effectively removing git tracking from the directory
+# Note: This action is irreversible and will delete all git history for the repository
