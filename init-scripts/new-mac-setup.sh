@@ -19,6 +19,8 @@ brew install gemini-cli
 brew install git
 brew install wget
 brew install python
+brew tap hashicorp/tap # add hashicorp tap to brew
+brew install hashicorp/tap/terraform
 
 # install mac apps - use casks for mac applications
 brew install --cask visual-studio-code
