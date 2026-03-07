@@ -34,6 +34,8 @@ git init # perform this on your working directory to initialize a new git reposi
 
 ```bash
 git commit -m "Initial commit with <filename>" # Commits the staged changes with a message
+
+git commit -a -m "a file was deleted" # Removes the deleted files from the remote repo
 ```
 
 ### 4. Push to remote repository
